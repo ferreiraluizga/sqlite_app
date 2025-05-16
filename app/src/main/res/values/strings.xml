@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">sqlite_app</string>
+    <string name="txtNome">Nome:</string>
+    <string name="plcNome">Digite seu nome</string>
+    <string name="txtEndereco">Endereço:</string>
+    <string name="plcEndereco">Digite seu endereço</string>
+    <string name="txtBairro">Bairro:</string>
+    <string name="plcBairro">Digite seu bairro</string>
+    <string name="txtCep">Cep:</string>
+    <string name="plcCep">Digite seu cep</string>
+    <string name="txtObs">Observações:</string>
+    <string name="plcObs">Alguma observação?</string>
+    <string name="btnCadastrar">Cadastrar</string>
+    <string name="txtResposta">Confirmação dos Dados</string>
+    <string name="btnConfirmar">Confirmar</string>
 </resources>
