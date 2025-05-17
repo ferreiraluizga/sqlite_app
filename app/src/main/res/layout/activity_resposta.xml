@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtResposta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtResposta"
+            android:layout_marginBottom="32dp"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/txtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtNome"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:hint="@string/plcNome"
+            android:inputType="text"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtEndereco"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/edtEndereco"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:hint="@string/plcEndereco"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtBairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtBairro"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/edtBairro"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:hint="@string/plcBairro"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtCep"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/edtCep"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:hint="@string/plcCep"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtObs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtObs"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/edtObs"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:hint="@string/plcObs"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/txtDataCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtObs"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/edtDataCadastro"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:hint="@string/plcObs"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/btnConfirmar"
+            android:backgroundTint="#2196F3"
+            android:padding="12dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</ScrollView>

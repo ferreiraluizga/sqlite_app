@@ -1,5 +1,6 @@
 package com.example.sqlite_app
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
@@ -19,14 +20,25 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val edtNome:EditText = findViewById(R.id.edtNome)
-        val edtEndereco:EditText = findViewById(R.id.edtEndereco)
-        val edtBairro:EditText = findViewById(R.id.edtBairro)
-        val edtCep:EditText = findViewById(R.id.edtCep)
-        val edtObs:EditText = findViewById(R.id.edtObs)
-        val dataCadastro:String = LocalDate.now().toString()
+        val edtNome: EditText = findViewById(R.id.edtNome)
+        val edtEndereco: EditText = findViewById(R.id.edtEndereco)
+        val edtBairro: EditText = findViewById(R.id.edtBairro)
+        val edtCep: EditText = findViewById(R.id.edtCep)
+        val edtObs: EditText = findViewById(R.id.edtObs)
+        val dataCadastro: String = LocalDate.now().toString()
 
-        val btnCadastrar:Button = findViewById(R.id.btnCadastrar)
+        val btnCadastrar: Button = findViewById(R.id.btnCadastrar)
+
+        btnCadastrar.setOnClickListener {
+            val intent = Intent(this, RespostaActivity::class.java)
+            intent.putExtra("nome", edtNome.text.toString())
+            intent.putExtra("endereco", edtEndereco.text.toString())
+            intent.putExtra("bairro", edtBairro.text.toString())
+            intent.putExtra("cep", edtCep.text.toString())
+            intent.putExtra("obs", edtObs.text.toString())
+            intent.putExtra("dataCadastro", dataCadastro)
+            startActivity(intent)
+        }
 
     }
 }

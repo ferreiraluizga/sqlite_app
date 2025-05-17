@@ -10,6 +10,7 @@
     <string name="plcCep">Digite seu cep</string>
     <string name="txtObs">Observações:</string>
     <string name="plcObs">Alguma observação?</string>
+    <string name="txtDataCadastro">Data de Cadastro:</string>
     <string name="btnCadastrar">Cadastrar</string>
     <string name="txtResposta">Confirmação dos Dados</string>
     <string name="btnConfirmar">Confirmar</string>
