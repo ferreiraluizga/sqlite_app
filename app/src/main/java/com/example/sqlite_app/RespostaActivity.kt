@@ -1,6 +1,6 @@
 package com.example.sqlite_app
 
-import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -43,6 +43,8 @@ class RespostaActivity : AppCompatActivity() {
                 edtDataCadastro.text.toString()
             )
             finish()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
     }
