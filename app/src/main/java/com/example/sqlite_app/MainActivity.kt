@@ -8,10 +8,8 @@ import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import java.time.LocalDate
-import java.util.Date
+import java.time.format.DateTimeFormatter
 
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
@@ -25,7 +23,9 @@ class MainActivity : AppCompatActivity() {
         val edtBairro: EditText = findViewById(R.id.edtBairro)
         val edtCep: EditText = findViewById(R.id.edtCep)
         val edtObs: EditText = findViewById(R.id.edtObs)
-        val dataCadastro: String = LocalDate.now().toString()
+        val temp = LocalDate.now()
+        val formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
+        val dataCadastro = temp.format(formatter)
 
         val btnCadastrar: Button = findViewById(R.id.btnCadastrar)
 
